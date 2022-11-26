@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block header %}
+
+<div class="bg-light p-3 p-sm-5 mb-4 border-top">
+  <div class="container">
+    <h1 class="display-4">詳細画面</h1>
+    <p class="lead">Todoの詳細です。</p>
+  </div>
+</div>
+{% endblock header %}
+
+{% block content %}
+  <div class='container'>
+    <div class="alert alert-success" role="alert">
+      <p>Title：{{ object.title }}</p>
+      <p>Memo：{{ object.memo }}</p>
+      <p>Priority：{{ object.priority }}</p>
+      <p>Dudate：{{ object.duedate }}</p>
+    </div>
+  </div>
+{% endblock content %}
